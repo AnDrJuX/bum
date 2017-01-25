@@ -1,0 +1,9 @@
+<h1>show</h1>
+
+<%= @item.name %></br>
+
+<%= link_to'back', items_path(@item) %> |
+
+<%= link_to'edit', edit_item_path(@item) %> |
+
+<%= link_to'delete', item_path(@item), method: :delete, data: {confirm: 'Вы уверены?'} %>

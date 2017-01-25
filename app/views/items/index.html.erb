@@ -1,0 +1,8 @@
+<h1>items</h1>
+
+
+<% @items.each do |item| %> </br>
+
+   Name: <%= link_to item.name, item_path(item) %>
+
+<% end %>
